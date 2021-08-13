@@ -22,6 +22,15 @@
                                     <constraint firstAttribute="height" constant="128" id="MFv-30-JWY"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preço Alcool " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l3T-Y0-HnJ">
+                                <rect key="frame" x="10" y="297" width="124.5" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Czn-R4-oE8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preço Gasolina" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pmZ-p2-dLd">
                                 <rect key="frame" x="261.5" y="297" width="142.5" height="30"/>
                                 <constraints>
@@ -41,19 +50,34 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preço Alcool " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l3T-Y0-HnJ">
-                                <rect key="frame" x="10" y="297" width="124.5" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPY-eC-u2e">
+                                <rect key="frame" x="147" y="476" width="120" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="Czn-R4-oE8"/>
+                                    <constraint firstAttribute="width" constant="120" id="Nck-tB-2pu"/>
+                                    <constraint firstAttribute="height" constant="50" id="dv3-E3-pQZ"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Calcular">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digite os Preços!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QkT-kk-7zB">
+                                <rect key="frame" x="10" y="591" width="394" height="65"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="Miq-0x-9ma"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                         <constraints>
+                            <constraint firstItem="PPY-eC-u2e" firstAttribute="top" secondItem="kMW-n7-1kC" secondAttribute="bottom" constant="100" id="0eJ-Kb-8PF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QkT-kk-7zB" secondAttribute="trailing" constant="10" id="2Zr-Wg-2DO"/>
                             <constraint firstItem="kMW-n7-1kC" firstAttribute="trailing" secondItem="pmZ-p2-dLd" secondAttribute="trailing" id="6Xj-dJ-9PY"/>
                             <constraint firstItem="pmZ-p2-dLd" firstAttribute="top" secondItem="eOe-NT-fZA" secondAttribute="bottom" constant="75" id="7na-7G-IbS"/>
                             <constraint firstItem="kMW-n7-1kC" firstAttribute="leading" secondItem="pmZ-p2-dLd" secondAttribute="leading" id="GyK-9Q-cWp"/>
@@ -62,10 +86,13 @@
                             <constraint firstItem="eOe-NT-fZA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="MCT-hR-gFa"/>
                             <constraint firstItem="pmZ-p2-dLd" firstAttribute="trailing" secondItem="eOe-NT-fZA" secondAttribute="trailing" id="Nh3-0z-CzG"/>
                             <constraint firstItem="l3T-Y0-HnJ" firstAttribute="top" secondItem="eOe-NT-fZA" secondAttribute="bottom" constant="75" id="R98-zC-Y2F"/>
+                            <constraint firstItem="PPY-eC-u2e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="T0A-gj-JET"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eOe-NT-fZA" secondAttribute="trailing" constant="10" id="YBG-QY-EWd"/>
                             <constraint firstItem="dAb-Ir-t7O" firstAttribute="trailing" secondItem="l3T-Y0-HnJ" secondAttribute="trailing" id="cEI-5Y-JfF"/>
+                            <constraint firstItem="QkT-kk-7zB" firstAttribute="top" secondItem="PPY-eC-u2e" secondAttribute="bottom" constant="65" id="jcs-l1-p6D"/>
                             <constraint firstItem="kMW-n7-1kC" firstAttribute="top" secondItem="pmZ-p2-dLd" secondAttribute="bottom" constant="15" id="ovL-cD-4f3"/>
                             <constraint firstItem="dAb-Ir-t7O" firstAttribute="leading" secondItem="eOe-NT-fZA" secondAttribute="leading" id="r34-Bn-oam"/>
+                            <constraint firstItem="QkT-kk-7zB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="xFC-wG-Ogh"/>
                             <constraint firstItem="l3T-Y0-HnJ" firstAttribute="leading" secondItem="eOe-NT-fZA" secondAttribute="leading" id="y92-HU-MIY"/>
                         </constraints>
                     </view>
@@ -77,6 +104,9 @@
     </scenes>
     <resources>
         <image name="MicrosoftTeams-image" width="407" height="106"/>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
